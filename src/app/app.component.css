@@ -1,0 +1,13 @@
+.title-h2 {
+  background-color: #234d20 !important;
+  color: #f0f7da;
+  margin: 0 0 40px 0;
+  padding: 50px;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  text-transform: uppercase;
+}
+
+.app-title {
+  text-align: center;
+}

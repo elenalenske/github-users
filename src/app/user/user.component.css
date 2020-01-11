@@ -1,0 +1,58 @@
+.label, .form-control {
+  margin-top: 25px;
+  font-size: 20px;
+}
+
+.form-control, .btn-primary {
+  border-radius: 10px;
+}
+
+.form-control {
+  text-align: center;
+  padding: 5px 10px;
+}
+
+.btn-primary {
+  padding: 10px 50px;
+  background-color: #77ab59;
+  color: #234d20;
+  font-weight: 700;
+  margin: 40px 0;
+  font-size: 20px;
+}
+
+.userStatus {
+  background-color: #36802d;
+  margin: 0;
+  padding-bottom: 18px;
+  padding-top: 18px;
+  color: #f0f7da;
+}
+
+.rep-list, .org-list {
+  width: 50%;
+  background-color: #c9df8a;
+  color: #234d20;
+}
+
+.rep-list {
+  float: left;
+  border-bottom-left-radius: 50px;
+}
+
+.org-list {
+  float: right;
+  border-bottom-right-radius: 50px;
+}
+
+.lists {
+  display: flex;
+  width: 100%;
+}
+
+.list {
+  flex: 1;
+  list-style-type: none;
+  padding-left: 0;
+  line-height: 1.5;
+}

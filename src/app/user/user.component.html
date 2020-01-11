@@ -1,0 +1,36 @@
+<label class="label">Enter GitHub User Name:</label>
+<br>
+<input
+    type="text"
+    class="form-control"
+    [(ngModel)]="userName">
+<br>
+<button
+    class="btn btn-primary"
+    (click)="onCheckUser()">CHECK</button>
+<h3 *ngIf="userStatus; else noUser" class="userStatus">{{ userStatus }}</h3>
+<ng-template #noUser>
+  <h3>No user has been selected</h3>
+</ng-template>
+<div class="lists">
+  <div class="rep-list">
+    <h3>
+      Repositories
+    </h3>
+    <ul class="list">
+      <li *ngFor="let repo of repos" class="li-list">
+        {{ repo.name }}
+      </li>
+    </ul>
+  </div>
+  <div class="org-list">
+    <h3>
+      Organisations
+    </h3>
+    <ul class="list">
+      <li *ngFor="let org of orgs" class="li-list">
+        {{ org.login }}
+      </li>
+    </ul>
+  </div>
+</div>
