@@ -31,7 +31,7 @@ export class UserComponent implements OnInit {
     const url = `${this.BASE_URL}/users/${this.userName}/repos?per_page=250`;
     axios.get(url).then(repos => {
       this.repos = repos.data;
-      // console.log('Repos:', repos);
+      console.log('Repos:', repos);
     });
   }
 
@@ -43,7 +43,7 @@ export class UserComponent implements OnInit {
     .then(([user, orgs]) => {
       this.user = user.data;
       this.orgs =  orgs.data;
-      // console.log('User:', this.user, 'Orgs:', this.orgs);
+      console.log('User:', this.user, 'Orgs:', this.orgs);
     });
   }
 }
